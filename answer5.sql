@@ -1,0 +1,1 @@
+select e.name from employee e where e.id in(select employee_id from work where work.time = '2020-03-01');
