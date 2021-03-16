@@ -9,6 +9,9 @@ class Scratch {
     }
 
     public static int recursion(int n){
+        if (n <= 0) {
+            return -1;
+        }
         if (n == 0){
             return 0;
         }else if (n == 1 || n == 2){
@@ -19,6 +22,10 @@ class Scratch {
     }
 
     public static int recursionAugmentByArray(int n){
+        if (n <= 0) {
+            return -1;
+        }
+
         int [] arr = new int[n];
         if (n == 0){
             return 1;
@@ -37,6 +44,9 @@ class Scratch {
     }
 
     public static int numberIndexBefore(int n){
+        if (n <= 0) {
+            return -1;
+        }
         int last = 0;
         int cur = 1;
         int next = last + cur;
